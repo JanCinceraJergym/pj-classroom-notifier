@@ -23,10 +23,10 @@ Hurá! Program funguje, ale moc jsme si nepomohli, stále je potřeba ho manuál
 Pro automatické spuštění programu můžete využít programy jako jsou cron, nebo systemd timers. Osobně jsem se rozhodl pro druhou možnost. Nejdřív jsem vytvořil timer unit, který pravidelně každý den v 5:00 a v 19:00 spustí service unit. V service unit jsem pouze nastavil cílový program pro spuštení (tedy main.py) a jako bezpečností prvek systémového uživatele, který zajišťuje izolaci od zbytku systému.
 
 ## Odkazy
-[Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/oauth2)
-[Google API Client Library for Python Docs](https://googleapis.github.io/google-api-python-client/docs/)
-[Google Cloud Console](https://console.cloud.google.com)
-[Classroom API v1](https://googleapis.github.io/google-api-python-client/docs/dyn/classroom_v1)
-[Gmail API v1](https://googleapis.github.io/google-api-python-client/docs/dyn/gmail_v1)
-[systemd/Timers - ArchWiki](https://wiki.archlinux.org/title/Systemd/Timers)
-[man systemd.service](https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html)
+[Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/oauth2)   
+[Google API Client Library for Python Docs](https://googleapis.github.io/google-api-python-client/docs/)   
+[Google Cloud Console](https://console.cloud.google.com)   
+[Classroom API v1](https://googleapis.github.io/google-api-python-client/docs/dyn/classroom_v1)   
+[Gmail API v1](https://googleapis.github.io/google-api-python-client/docs/dyn/gmail_v1)   
+[systemd/Timers - ArchWiki](https://wiki.archlinux.org/title/Systemd/Timers)   
+[man systemd.service](https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html)   
