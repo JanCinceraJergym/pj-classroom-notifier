@@ -20,7 +20,10 @@ Spusťte `main.py`, automaticky se otevře prohlížeč s autorizačním oknem, 
 
 ## Automatizace
 Hurá! Program funguje, ale moc jsme si nepomohli, stále je potřeba ho manuálně spouštět. Naštěstí žijeme v době mocných nástrojů, které můžeme využít k automatizaci.   
-Pro automatické spuštění programu můžete využít programy jako jsou cron, nebo systemd timers. Osobně jsem se rozhodl pro druhou možnost. Nejdřív jsem vytvořil timer unit, který pravidelně každý den v 5:00 a v 19:00 spustí service unit. V service unit jsem pouze nastavil cílový program pro spuštení (tedy main.py) a jako bezpečností prvek systémového uživatele, který zajišťuje izolaci od zbytku systému.
+Pro automatické spuštění programu můžete využít programy jako jsou cron, nebo systemd timers. Osobně jsem se rozhodl pro druhou možnost.   
+
+### Systemd timers
+Nejdřív jsem vytvořil timer unit, který pravidelně každý den v 5:00 a v 19:00 spustí service unit. V service unit jsem nastavil cílový program pro spuštení (tedy main.py), proměnné prostředí (konkrétně `PJNOTIFIER_SENDER_ADDRESS`) a jako bezpečností prvek systémového uživatele, který zajišťuje izolaci od zbytku systému.
 
 ## Odkazy
 [Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/oauth2)   
